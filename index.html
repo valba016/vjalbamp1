@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <div id="header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- <img src="" class="logo" /> -->
+         <img src="./Images/Logo_Edited-removebg-preview.png" alt="Logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Education</a></li>
+          <li><a href="#porfolio">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <!-- Header -->
+  <div class="header-text">
+    <p>Aspiring</p>
+    <h1>Front-end Developer <span> <br>Vj V. Alba</span><br /></h1>
+  </div>
+</div>
+
+</div>
+
+
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./Images/profile-pic (1).png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+                "I am committed to improving every aspect of my life. With 18 years devoted to excelling in Marketing, Banking, and BPO, I am now venturing into the fascinating field of web development. This change is not just a career switch but a progression that merges my past skills with the technological innovations that influence our world."
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <div class="education-item">
+                <div class="Images">
+                  <img src="./Images/EARIST.png" alt="college">
+                  <div class="education-text">
+                    <h2>Bachelor of Science and Business Administration</h2>
+                    <p>Major in Marketing (SY – 2000 to 2004)<br>EARIST – Sampaloc, Nagtahan Manila</p>
+                  </div>
+                </div>
+              </div>
+              <div class="education-item">
+                <div class="Images">
+                  <img src="./Images/KODEGO.png" alt="Bootcamp">
+                  <div class="education-text">
+                    <h2>Full Stack Web Development</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+    </div>
+    
+    <!-- Services -->
+     <div id="services">
+
+      <div class="container">
+        <h1 class="sub-title">Work</h1>
+        <div class="services-list">
+          <div>
+      
+            <h2>Inspiro Relia Inc.</h2>
+            <p>
+                Position: CSR/TSR
+                Duration: August 29, 2023 to Present
+                Account: Web Hosting
+            </p>
+           
+          </div>
+          <div>
+            
+            <h2> Metacom Business Process Outsourcing Solutions</h2>
+            <p>
+                Position: Recruitment Specialist
+                Duration: March 15, 2022, to August 16, 2023
+            </p>
+           
+          </div>
+          <div>
+            
+            <h2>Synchrony Global Services Philippines Inc.</h2>
+            <p>
+                Position: Collections Representative
+                Duration: January 18, 2021, to July 13, 2021
+            </p>
+        
+          </div>
+          <div>
+          
+            <h2>Freelance Home-based
+                Company Name: Lead Heroes (Part-Time)</h2>
+            <p>
+                Position: Appointment Setter
+                Duration: November 13, 2020, to December 30, 2020
+            </p>
+           
+          </div>
+          <div>
+          
+            <h2>Company: NU Tech E-Business Solutions
+                </h2>
+            <p>
+              Position: Chat moderator, Team Leader , Account Manager  
+              Duration: February 1, 2020, to July 30, 2021
+            </p>
+           
+          </div>
+          <div>       
+            <h2>Company Name: TeleTech (Cainta Site)</h2>
+            <p>
+                Customer Service Representative
+                Duration: October 16, 2019, to July 5, 2020
+                Account: ADP
+            </p>
+</div>
+            <div>
+                <h2>Company: Keysys Inc.</h2>
+                <p>
+                    Position: Payroll Specialist
+                    Duration : July 3, 2019 to September 30, 2019                      
+                </p>
+          </div>
+          <div>
+            <h2>Human Resources Department
+                Results Manila Inc.</h2>
+            <p>
+              Position : HR Associate  
+              Duration : July 17, 2017, to April 4, 2019
+              
+            </p>
+       
+      </div>
+      <div>
+            <h2>VXI Holdings Incorporated Ltd.</h2>
+            <p>
+                November 27, 2013 to April 3, 2015
+                Position : HR Associate
+
+                Account : Western Union Money Transfer
+                Duration : November 23, 2012, to November 27, 2013
+
+            </p>
+          </div>
+         
+        <div>
+            <h2>Company Name: Convergys (San Lazaro)</h2>
+            <p>
+              
+              Position: Customer Service/Technical Support/Sales/Billing
+              Duration: August 18, 2012, to November 22, 2012
+
+            </p> 
+     
+        </div>
+        <div>
+          
+           <h2>Company Name: EGS</h2>
+           <p>
+              
+              Position: Medical Account Specialist
+              Duration: October 24, 2011, to August 17, 2012
+  
+          </p> 
+
+        </div>
+        <div>
+           <h2>Company Name: EGS</h2>
+           <p>
+                   
+              Position: Medical Account Specialist
+              Duration: October 24, 2011, to August 17, 2012
+              Account :  Humana 
+       
+          </p> 
+        </div>
+          <div>
+            <h2>Company Name: Bow & Wow</h2>
+            <p>
+                    
+              Position: Product Researcher (Part Time)
+              Duration: July 6, 2011, to October 22, 2011
+        
+           </p>      
+
+          </div>
+            <div>
+            <h2>Company Name: Hinduja Global Solutions</h2>
+            <p>
+                    
+              
+              Position: Technical Support Representative
+              Duration: May 5, 2010, to July 6, 2011
+              Account: PDR and Brothers
+
+        
+           </p>
+           
+          </div>
+          <div>
+            <h2>Company Name: Teleperformance</h2>
+            <p>
+                    
+              Position: Technical Support Representative
+              Duration: April 29, 2010, to May 1, 2010
+              Account : Boost Mobile
+        
+           </p>
+
+          </div>
+          <div>
+            <h2>Banking Industry BPI Family Savings Bank</h2>
+            <p>
+                    
+              Position : UNI Teller 
+              Duration : May 5, 2008, to April 28, 2010
+
+           </p>
+
+          </div>
+        <div>
+            <h2>Company Name: ICT</h2>
+            <p>
+                     
+             Position: Credit Account Executive
+             Duration: September 22, 2007, to May 4, 2008
+             Accounts: Cap One and Citi Bank US
+           </p>
+      </div>
+
+      <div>
+        <h2>Retail Industry Data Blitz</h2>
+        <p>
+                
+            Position : Marketing Assistant
+            Duration : August 22, 2004 to September 22, 2007 
+       </p>
+  </div>
+
+</div>
+</div>
+</div>
+ <!-- Skills -->
+ <div id="skills">
+    <div class="container">
+      <h1 class="sub-title">Skills</h1>
+      <div class="technology-list">
+        <div class="tech-con">
+          <div class="img">
+            <img src="./Images/Bootsrap.png" alt="Bootstrap">
+            <h2>Bootstrap</h2>
+          </div>
+        </div>
+        <div class="tech-con">
+          <div class="img">
+            <img src="./Images/canva.jpg" alt="Canva">
+            <h2>Canva</h2>
+          </div>
+        </div>
+        <div class="tech-con">
+          <div class="img">
+            <img src="./Images/Google Workspace.png" alt="Google Workspace">
+            <h2>Google Workspace</h2>
+          </div>
+        </div>
+        <div class="tech-con">
+          <div class="img">
+            <img src="./Images/HTML_JS_CSS.png" alt="HTML JS CSS">
+            <h2>HTML, JS, CSS</h2>
+          </div>
+        </div>
+        <div class="tech-con">
+          <div class="img">
+            <img src="./Images/M365.png" alt="Comcast">
+            <h2>Comcast</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+ 
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./Images/Kodeledger.png" />
+            <div class="layer">
+              <h3>Kodeledger</h3>
+              <p>
+                Kodeledger is your go-to resource for coding, technology news,
+                tutorials, and project showcases in software development.
+                Discover, learn, and innovate!
+              </p>
+              <a href="https://github.dev/LordJamesQuintab/KodeLedger"
+                ><i class="fa-solid fa-code"></i></a>
+                <a href="https://stellular-daifuku-7cf631.netlify.app/"
+                ><i class="fa-solid fa-magnifying-glass"></i></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Images/KodeNews.png" />
+            <div class="layer">
+              <h3>KodeNews</h3>
+              <p>
+                KodeNews is your go-to source for the latest technology news,
+                coding tutorials, software development updates, and project
+                showcases. Stay informed!
+              </p>
+              <a href="https://github.dev/LordJamesQuintab/KodeNews"
+                ><i class="fa-solid fa-code"></i></a>
+                <a href="https://kodenewssample.netlify.app/"
+                ><i class="fa-solid fa-magnifying-glass"></i></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Images/KodeResto.png" />
+            <div class="layer">
+              <h3>KodeResto</h3>
+              <p>
+                KodeResto is your go-to site for event planning, offering unique
+                wedding promotions, baptism celebrations, and exclusive deals to
+                make your events memorable.
+              </p>
+              <a href="https://github.dev/LordJamesQuintab/KodeResto"
+                ><i class="fa-solid fa-code"></i></a>
+                <a href="https://samplekoderesto2.netlify.app/"
+                ><i class="fa-solid fa-magnifying-glass"></i></i></a>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>    
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>vj.alba@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>0912-512-6318</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="/VJ ALBA RESUME.pdf" download class="button btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="
+              Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright Vj Alba</p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      })
+
+    </script>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script
+    src="https://kit.fontawesome.com/0a84a93d05.js"
+    crossorigin="anonymous"
+  ></script>
+
+
+
+  </body>
+</html>

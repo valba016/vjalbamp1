@@ -1,0 +1,686 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "kanit";
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background: rgb(0, 0, 0);
+  color: #1d1b1b;
+}
+#header {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #fff5f5, #000000);
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  justify-content: space-between;
+
+  display: flex;
+  padding: 20px 10px;
+  z-index: 100000;
+}
+
+.container {
+  padding: 10px 10%;
+}
+.navbar {
+  padding: 40px;
+}
+.logo {
+  padding: 10px;
+  margin-left: 50px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.logo {
+  width: 400px;
+  font-size: 200%;
+  margin-right: 100px;
+  text-decoration: none;
+  display: inline-block;
+  list-style: none;
+  color: #fff;
+  justify-content: space-between;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.header-text {
+  margin-top: 15%;
+  font-size: 30px;
+  width: 100;
+  justify-content: center;
+  text-align: center;
+}
+.header-text h1 {
+  color: rgb(253, 253, 253);
+}
+.header-text h1:before {
+  content: "";
+}
+.header-text h1 {
+  font-size: 60px;
+}
+.header-text h1 span {
+  color: #ff004f;
+}
+
+.text-animation {
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 200px;
+}
+.text-animation span {
+  position: relative;
+}
+.text-animation span:before {
+  content: "Web Developer";
+  color: rgb(255, 255, 255);
+  animation: words 20s infinite;
+}
+.text-animation span::after {
+  content: "";
+  background-color: rgb(13, 13, 13);
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid rgb(0, 0, 0);
+  right: -8px;
+  animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor {
+  to {
+    border-left: 2px solid gray;
+  }
+}
+@keyframes words {
+  0%,
+  20% {
+    content: "Front-End Developer";
+  }
+  21%,
+  40% {
+    content: "Front-End Developer";
+  }
+  41%,
+  60% {
+    content: "Front-End Developer";
+  }
+  61%,
+  80% {
+    content: "Front-End Developer";
+  }
+  81%,
+  100% {
+    content: "Front-End Developer";
+  }
+}
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
+/* About */
+
+#about {
+  padding: 80px 0;
+  color: rgb(203, 199, 199);
+  background-color: #000;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width: 100%;
+}
+
+.Images {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Images img {
+  width: 150px; /* Adjust width as needed */
+  border-radius: 10px; /* Adjust the border-radius if needed */
+  margin-right: 5px; /* Space between image and text */
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.education-text {
+  max-width: 600px; /* Adjust width as needed */
+}
+
+.education-text h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff; /* Text color */
+}
+
+.education-text p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ccc; /* Text color */
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+}
+.about-col-2 p {
+  font-size: 20px;
+}
+.sub-title {
+  font-size: 60px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+.Images {
+  display: flex;
+  flex-direction: column; /* Display items in a column */
+  border-radius: 10px; /* Adjust the border-radius if needed */
+}
+
+.Images img {
+  margin: 10px 0; /* Adds some spacing between images */
+  height: 150px; /* Set a specific height for the images */
+  width: 150px;
+}
+.Images ul li {
+  text-align: left;
+}
+.sub {
+  font-size: 80px;
+  font-weight: 300;
+  color: rgb(254, 246, 246);
+}
+.tab-titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 40px;
+}
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #05179b;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after {
+  width: 50%;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents ul li span {
+  color: #55001b;
+  font-size: 14px;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* Services */
+
+#services {
+  padding: 30px 0;
+  background-color: #000;
+  /* MAAM VJ DITO KA PO MAG ADJUST COLOR NG background SA WORK MO  */
+}
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.services-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+.services-list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.services-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.services-list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.services-list div:hover {
+  background: #ff004f;
+  transform: translateY(-10px);
+}
+
+/* Technologies */
+.technology-list .img {
+  position: relative;
+  width: 150px; /* Set a fixed width for the images */
+  height: 150px; /* Set a fixed height for the images */
+  overflow: hidden;
+}
+
+.technology-list .img img {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+  object-fit: cover; /* Ensure the image covers the specified width and height */
+  transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.technology-list .img:hover img {
+  transform: scale(1.1); /* Scale up the image slightly on hover */
+}
+
+.technology-list .img h2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Smooth transition on hover */
+}
+
+.technology-list .img:hover h2 {
+  opacity: 1; /* Make the h2 visible on hover */
+}
+
+/* Ensure the container for the images keeps them in columns */
+.technology-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between the images */
+}
+
+.technology-list .tech-con,
+.technology-list > div {
+  flex: 1 1 calc(20% - 20px); /* Adjust the width of each container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.technology-list .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Portfolio */
+#portfolio {
+  padding: 60px 0;
+  background-color: #000;
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 40px;
+  /* margin-bottom: 200px; */
+}
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+.work img {
+  width: 150%;
+  height: 300px;
+  border-radius: 10px;
+  display: block;
+}
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(250, 45, 182, 0.6), #6a6567);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: rgb(255, 230, 230);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.layer a {
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  background: #fff;
+  width: 50px;
+  height: 30px;
+  border-radius: 90%;
+  text-align: center;
+}
+.work:hover img {
+  transform: scale(1.1);
+}
+.work:hover .layer {
+  height: 100%;
+}
+
+.button {
+  margin: 50px auto;
+  width: fit-content;
+  display: flex;
+  background: #ff004f;
+  border: 1px solid #ba1f81;
+  /* padding: 10px 50px; */
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #f9e6e6;
+
+  transition: background 0.5s;
+}
+.button:hover {
+  background-color: white;
+  color: #000;
+}
+.btn:hover {
+  background: #efeaec;
+}
+
+/* Contact */
+#contact {
+  padding-top: 50px;
+  background: rgb(0, 0, 0);
+  text-align: center;
+}
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-left .sub {
+  color: #faf5f5;
+  font-weight: bold;
+}
+.contact-right {
+  flex-basis: 60%;
+  color: #fffdfd;
+}
+.contact-left p {
+  margin-top: 30px;
+  color: #f5f5f5;
+}
+.contact-left p i {
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 25px;
+}
+.social-icons {
+  margin-top: 30px;
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ffffff;
+  display: inline-block;
+  transform: transform 0.5s;
+}
+.social-icons a:hover {
+  color: rgb(254, 3, 3);
+  transform: translateY(-5px);
+}
+.btn.btn2 {
+  display: inline-block;
+  background: #ff004f;
+  color: white;
+}
+.btn.btn2:hover {
+  background-color: white;
+  color: #000;
+}
+.contact-right form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fcfcfc;
+  font-size: 18px;
+  border-radius: 6px;
+}
+form .btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.copyright {
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  background: rgb(29, 28, 28);
+  margin-top: 20px;
+}
+.copyright i {
+  color: #d50000;
+}
+
+/* css for small screen */
+nav .fa-solid {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  #header {
+    /* background-image: ; */
+  }
+  .header-text {
+    margin-top: 40%;
+    font-size: 16px;
+  }
+  .header-text h1 {
+    font-size: 30px;
+  }
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+    color: white;
+    margin-left: 60px;
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul li .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .sub-title {
+    font-size: 40px;
+    padding-top: 5px;
+  }
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+    margin-top: 50px;
+  }
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+  .about-col-1 img {
+    padding-bottom: 5px;
+    display: flex;
+  }
+  .about-col-2 {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  #services {
+    flex-basis: 100%;
+    padding: 20px;
+    align-content: center;
+  }
+
+  #services .contact-left,
+  .contact-right {
+    flex-basis: 200%;
+    align-content: center;
+    text-align: center;
+  }
+  .contact-left {
+    align-items: center;
+    margin: 100px;
+  }
+
+  .contact-right,
+  .btn {
+    padding-left: 50px;
+    align-items: center;
+  }
+  .tech-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 250px;
+  }
+  .thecard {
+    flex-direction: row;
+    /* padding-top: 10px; */
+    max-width: 80%;
+    margin-bottom: 20px;
+    gap: 60vh;
+  }
+  .thecard .thefront,
+  .thecard .theback {
+    /* padding-top: 10px; */
+    width: 100%;
+    height: min-content;
+    padding: 50px;
+    gap: 250px;
+  }
+  .sub-title {
+    margin-top: 50%;
+  }
+}
+#msg {
+  color: green;
+  margin-top: -10px;
+  display: block;
+}
